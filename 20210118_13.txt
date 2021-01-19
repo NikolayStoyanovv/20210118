@@ -1,0 +1,29 @@
+﻿Упражнение 13. Логически оператори
+
+#include <stdio.h>
+int main() {
+    int nA;
+    int nB;
+    int nX;
+    int nY;
+    printf("Please enter a value of nA\n");
+    scanf("%d", &nA); 
+
+    printf("Please enter a value of nB:\n");
+    scanf("%d", &nB);
+
+    printf("Please enter a value of nX:\n");
+    scanf("%d", &nX);
+    
+    printf("Please enter a value of nY:\n");
+    scanf("%d", &nY);
+
+    if ( nA > nB && nA !=0 ) {
+        printf("&& Operator : Both conditions are true\n");
+    }
+
+    if ( nA > nB || nA !=0 ) {
+        printf("|| Operator : one conditions is true or both are\n");
+    }
+
+}

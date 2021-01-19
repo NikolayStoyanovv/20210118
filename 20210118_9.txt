@@ -1,0 +1,37 @@
+﻿Задача 9. Аритметични оператори
+#include <stdio.h>
+int main(){
+	int iX = 13;
+	int iY = 44;
+	int iResult = 0;
+
+	iResult = iX - iY;
+	printf("%d - %d = %d \n", iX, iY, iResult);//13-44=-31;
+
+	iResult = iY / iX;
+	printf("%d / %d = %d \n", iY, iX, iResult);//44/13=3
+
+	iResult = iY % iX;
+	printf("%d / %d Remainder: %d\n", iY, iX, iResult);//44/13 Remainder:5
+
+	// homework: examples for '*' и '+', float - използвайте вместо int
+
+return 0;
+}
+Homework
+
+#include <stdio.h>
+int main(){
+	float iX = 13.5;
+	float iY = 44.9;
+	float iResult = 0;
+
+	iResult = iX + iY;
+	printf("%f + %f = %f \n", iX, iY, iResult);//13.500000+44.900002=58.400002
+
+	iResult = iY * iX;
+	printf("%f * %f = %f \n", iY, iX, iResult);//44.900002 * 13.500000 = 606.150024
+
+
+return 0;
+}

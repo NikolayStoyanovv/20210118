@@ -1,0 +1,35 @@
+﻿Упражнение 15. Условен оператор (?:)
+#include <stdio.h>
+int main(){
+	int nA;
+
+	printf("Please enter a value of nA\n");
+	scanf("%d",&nA);
+	
+	int nB = ( nA == 1 ? 2 : 0 ); /* compares a number */
+
+	printf("A value is %d\n", nA);
+        printf("B value is %d\n", nB);
+
+return 0;
+}
+
+b) използвайте условния оператор за намиране на максималното от две числа
+#include <stdio.h>  
+   
+int main() {  
+	int a,b,c;
+    	printf("Enter any Two numbers\n");
+
+  	printf("Enter First Number :\n ");
+	scanf("%d",&a);
+
+  	printf("Enter Second Number :\n ");
+  	scanf("%d",&b);  
+    
+    	c=(a>b) ? a : b ;   // Conditional operator
+
+  	printf("\n %d is a bigger of two",c);
+   
+    return 0;  
+}

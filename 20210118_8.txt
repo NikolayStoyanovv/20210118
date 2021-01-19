@@ -1,0 +1,32 @@
+﻿Упражнение 8*. Напишете функция int isLetter(char c), която проверява дали
+подадения параметър е буква или не е буква от ASCII таблицата.
+
+#include <stdio.h>
+int isLetter(char c){
+
+    if((c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z')){
+        printf("'%c' is alphabet.", c);
+    }
+
+    else if(c >= '0' && c <= '9'){
+        printf("'%c' is digit.", c);
+    }
+
+    else{
+        printf("'%c' is special character.", c);
+    }
+
+    return 0;
+}
+int main()
+{
+    char input;
+
+    printf("Enter any character: ");
+    scanf("%c", &input);
+
+    isLetter(input);
+
+    return 0;
+}
+

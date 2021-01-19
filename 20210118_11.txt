@@ -1,0 +1,17 @@
+﻿Упражнение 11. Increment / decrement operators
+#include <stdio.h>
+int main() {
+int iCounter = 0;
+
+    while( ++ iCounter < 3 ) {
+        printf("Counter %d\n", iCounter);
+        printf("++ Counter: %d\n", ++ iCounter);
+        printf("-- Counter: %d\n", -- iCounter);
+        printf("Counter ++: %d\n", iCounter ++);
+        printf("Counter --: %d\n", iCounter --);
+    }
+return 0;
+} /* Какво става, ако се препълни броячът? */
+//В конкретният случай когато iCounter=3,цикълът спира да се изпълнява и компилаторът продължава нататък.
+//Ако става въпрос когато например числото е толкова голямо,че е запълнило паметта,то ще ни излезе грешка,
+//integer constant is too large

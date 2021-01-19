@@ -1,0 +1,18 @@
+﻿Упражнение 17* Направете генератор на случайни числа по следния
+алгоритъм (xorshift): 
+#include <stdio.h>
+    int main(){
+        long long int number;
+        printf("Please enter a number\n");
+        scanf("%ld",&number);//If we enter 4
+        
+        number^=number<<13;
+        printf("The number is: %ld \n",number);//The number is: 32772
+        
+        number^=number>>17;
+        printf("The number is: %ld \n",number);//The number is: -1118502908
+        
+        number^=number<<5;
+        printf("The number is: %ld \n",number);//The number is: 401932420
+
+}
